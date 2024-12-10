@@ -53,6 +53,3 @@ This is an ecommerce application built using React Native for the mobile app. Th
 ## License
 This project is licensed under the MIT License.
 
----
-
-Feel free to modify this template as per your specific project details.
