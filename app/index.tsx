@@ -1,10 +1,13 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, StyleSheet, FlatList } from "react-native";
+import products from '../assets/products.json'
+import ProductListItem from "../Components/ProductListItem";
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-          <Text style={styles.title}>Home Screen</Text>
-    </View>
+      <FlatList 
+          data = {products}
+          renderItem = {({item})=><ProductListItem product={item}/>}
+        />
   );
 }
 
@@ -16,7 +19,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
   },
   title:{
-      fontSize: 50,
-      fontWeight: 'bold',
+      fontSize: 25,
+      fontWeight: 'bold'
   }
 });
