@@ -8,10 +8,10 @@ import { Center } from "@/Components/ui/center";
 
 export default function HomeScreen() {
   return(
-    <Center className="flex-1 bg-green-200">
-      <Box>
-        <Text className="font-semibold text-9xl color-white">This is green bro</Text>
-      </Box>
+    <Center className="flex-auto bg-green-200 h-dvh">
+        <Text className="font-semibold text-7xl color-orange-400">This is..</Text>
+        <Text className="font-semibold text-9xl color-green-700">Green</Text>
+        <Text className="font-semibold text-7xl color-white">Bro. </Text>
     </Center>
   );
   // return (
